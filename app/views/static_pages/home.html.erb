@@ -28,48 +28,26 @@
 
   <body>
 
-    <div class="navbar navbar-inverse navbar-fixed-top" role="navigation">
-      <div class="container">
-        <div class="navbar-header">
-          <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
-            <span class="sr-only">Toggle navigation</span>
-            <span class="icon-bar"></span>
-            <span class="icon-bar"></span>
-            <span class="icon-bar"></span>
-          </button>
-         
-          <a class="navbar-brand" href="#">Home</a>
-          <a class="navbar-brand" href="#">Services</a>
-          <a class="navbar-brand" href="#">Careers</a>
-          <a class="navbar-brand" href="#">About</a>
-          <a class="navbar-brand" href="#">Support</a>                                        
-        </div>
-        <div class="navbar-header">
-        	<a class="navbar-brand">Comprehensive Suite of IT Solutions</a>
-        </div>
-   <!--     
-        <div class="navbar-collapse collapse">
-          <form class="navbar-form navbar-right">
-            <div class="form-group">
-              <input type="text" placeholder="Email" class="form-control">
-            </div>
-            <div class="form-group">
-              <input type="password" placeholder="Password" class="form-control">
-            </div>
-            <button type="submit" class="btn btn-success">Sign in</button>
-          </form>
-        </div><!--/.navbar-collapse 
-   -->
-        
-      </div>
-    </div>
+	<%= render 'layouts/header' %>
 
     <!-- Main jumbotron for a primary marketing message or call to action -->
     <div class="jumbotron">
       <div class="container">
-        <h1>InnoWow Solutions</h1>
-        <p>is a software development and technology services company with strategic vision to provide our clients with quality solutions to stimulate their growth in existing competitive markets.</p>
-        <p><a class="btn btn-primary btn-lg" role="button">Learn more &raquo;</a></p>
+        
+        <table>
+        <tr>
+        	<td align="top">
+        	<h1>InnoWow Solutions</h1>
+        	is a software development and technology services company with strategic vision to provide our clients 
+        	with quality solutions to stimulate their growth in existing competitive markets.</p>
+        	<p><a class="btn btn-primary btn-lg" href="/static_pages/services" role="button">Learn more &raquo;</a></p>
+        	</td>
+        	<td>
+          <img alt="Rails" src="/assets/world.jpg" height="200" width="300" align="top"/>
+          	</td>
+        </tr>  
+        </table>        	
+        
       </div>
     </div>
 
@@ -77,34 +55,30 @@
       <!-- Example row of columns -->
       <div class="row">
         <div class="col-md-4">
-          <h2>Cloud Computing</h2>
+          <img alt="Rails" src="/assets/cloud.jpg" height="180" width="300"/>
+          	
+          <h2>Cloud Computing</h2>          
           <p>InnoWow Solutions can analyze and understand your Cloud Computing needs - we apply our deep expertize to deliver real-world solutions to your business.</p>
-          <p><a class="btn btn-default" href="#" role="button">View details &raquo;</a></p>
+          <p><a class="btn btn-default" href="/static_pages/services" role="button">View details &raquo;</a></p>
         </div>
         <div class="col-md-4">
+          <img alt="Rails" src="/assets/staffing.jpeg" />        	
           <h2>Staffing Solutions</h2>
           <p>InnoWow Solutions can work with you to understand your staffing needs - we help you to find the right talent - at the right time - to meet your IT staffing needs.</p>
-          <p><a class="btn btn-default" href="#" role="button">View details &raquo;</a></p>
+          <p><a class="btn btn-default" href="/static_pages/services" role="button">View details &raquo;</a></p>
        </div>
         <div class="col-md-4">
+          <img alt="Rails" src="/assets/mobile.png" height="180" width="200"/>        	
           <h2>Web and Mobility</h2>
           <p>InnoWow Solutions can help with E2E solution deployment with our vast expertize for both Web and Mobile applications.</p>
-          <p><a class="btn btn-default" href="#" role="button">View details &raquo;</a></p>
+          <p><a class="btn btn-default" href="/static_pages/services" role="button">View details &raquo;</a></p>
         </div>
       </div>
 
       <hr>
 
-      <footer>
-        <p>&copy; Company 2013</p>
-      </footer>
-    </div> <!-- /container -->
 
-
-    <!-- Bootstrap core JavaScript
-    ================================================== -->
-    <!-- Placed at the end of the document so the pages load faster -->
-    <script src="https://code.jquery.com/jquery-1.10.2.min.js"></script>
-    <script src="../../dist/js/bootstrap.min.js"></script>
+	</div> <!-- /container -->
+	<%= render 'layouts/footer' %>
   </body>
 </html>
